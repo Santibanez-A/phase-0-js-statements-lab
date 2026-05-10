@@ -1,19 +1,20 @@
 let temperature = 85;
+let timeOfDay = "morning";
+let soilMoisture = 20;
 
 if (temperature > 80) {
-  console.log("Watering on");
+    console.log("Watering on");
+} else {
+    console.log("Watering off");
 }
 
-let timeOfDay = "morning";
-
-if (timeOfDay === "morning") {
-  console.log("Lights off");
+if (timeOfDay === "evening" || timeOfDay === "night") {
+    console.log("Lights on");
+} else {
+    console.log("Lights off");
 }
-
-let soilMoisture = 30;
 
 while (soilMoisture < 40) {
-  soilMoisture++;
+    soilMoisture += 5;
+    console.log(soilMoisture);
 }
-
-console.log(soilMoisture);
